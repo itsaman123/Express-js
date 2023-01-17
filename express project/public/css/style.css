@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-bg:#1e272e;
+    --main-color:#0097e6;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.row{
+    margin: 0;
+}
+.main_menu{
+    background-color: var(--main-bg);
+}
+.navbar{
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: 2rem;
+}
+.navbar li{
+    margin-left: 2rem;
+}
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.navbar-toggler{
+    background-color: gray;
+}
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(60deg);
+    }
+}
+
+/* main header  */
+
+.main_header_left{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_header_left span{
+    color: var(--main-color);
+}
+.main_header_left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+.main_header_right{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.main_header_right figure img{
+    filter:drop-shadow(0 0.5rem 1rem rgba(245, 3, 3, 0.3));
+}
+
+footer{
+    width: 100%;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.4rem;
+    background-color: #000;
+    margin-top: auto;
+}
+
+
+ /* from 01:37 */
+ 
+ .tempInformation{
+    width: 40rem;
+    margin: auto;
+    background-color: black;
+    padding: 1rem;
+ }
+ .top_layer{
+    width: 100%;
+    height: 20%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+ }
+ .main_content input{
+    height: 40px;
+    background-color: #000;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 2rem 0;
+    color: #fff;
+
+ }
+
+ .top_layer, .main_layer{
+    color: #fff;
+ }
